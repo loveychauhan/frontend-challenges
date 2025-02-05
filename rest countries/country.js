@@ -20,7 +20,7 @@ backBtn.addEventListener('click', () => {
 })
 
 fetchcountry()
-async function fetchcountry(){
+async function fetchcountry() {
     main.classList.add('loading')
     const res = await fetch(`https://restcountries.com/v3.1/name/${countryName}`);
     const [data] = await res.json();
@@ -57,16 +57,42 @@ async function fetchcountry(){
 const ldLogo = document.querySelector('.ld-logo')
 
 
+let isDark = 0;
+
+isDark = parseInt(localStorage.getItem('isDark'))
+
+if (isDark === 1) {
+    document.body.classList.add('dark');
+    ldLogo.innerHTML = `<p class="ld-logo">
+    <i class="fa-solid fa-sun"></i>
+    &nbsp;Light Mode </p >`
+} else {
+    document.body.classList.remove('dark');
+    ldLogo.innerHTML = `<p class="ld-logo">
+    <i class="fa-regular fa-moon"></i>
+    &nbsp;Dark Mode
+</p>`
+}
+
 ldLogo.addEventListener('click', () => {
     document.body.classList.toggle('dark');
     if (document.body.classList.contains('dark')) {
+        isDark = 1;
+        localStorage.setItem('isDark', isDark)
+    } else {
+        isDark = 0;
+        localStorage.setItem('isDark', isDark)
+    }
+
+    if (isDark === 1) {
         ldLogo.innerHTML = `<p class="ld-logo">
         <i class="fa-solid fa-sun"></i>
         &nbsp;Light Mode </p >`
     } else {
         ldLogo.innerHTML = `<p class="ld-logo">
-            <i class="fa-regular fa-moon"></i>
-            &nbsp;Dark Mode
-        </p>`
+        <i class="fa-regular fa-moon"></i>
+        &nbsp;Dark Mode
+    </p>`
     }
+
 })

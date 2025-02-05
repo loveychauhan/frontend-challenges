@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   --background-color: white;
@@ -25,7 +28,9 @@ body.dark {
 .header-container {
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
   padding-inline: 24px;
+  width: 100%;
 }
+
 .header-content {
   display: flex;
   align-items: center;
@@ -136,7 +141,7 @@ a {
 .country-loading.skeleton h3 {
   height: 2rem;
 }
-.country-loading.skeleton .borders p{
+.country-loading.skeleton .borders p {
   width: 150px;
 }
 .country-card img {
@@ -156,6 +161,28 @@ a {
 .card-text p {
   margin-block: 6px;
 }
+
+.up-arrow {
+  width: 55px;
+  height: 55px;
+  position: fixed;
+  bottom: 100px;
+  right: 24px;
+  font-size: 24px;
+  background-color: aliceblue;
+  border-radius: 8px;
+  text-align: center;
+  color: black;
+  align-content: center;
+  opacity: 0;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease-in-out;
+}
+
+.up-arrow.scroll {
+  opacity: 100;
+}
+
 @keyframes skeleton {
   0% {
     background-color: hsl(201, 28%, 90%);
@@ -183,10 +210,10 @@ a {
   .seacrch-filter-container {
     gap: 12px;
   }
-  .country-loading.skeleton{
+  .country-loading.skeleton {
     width: 100vw;
   }
-  .country-loading.skeleton .img{
+  .country-loading.skeleton .img {
     width: 100%;
   }
 }

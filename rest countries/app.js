@@ -1,9 +1,10 @@
 const countryContainer = document.querySelector('.country-container');
 const filterByRegion = document.querySelector('#filter-country');
 const searchCountry = document.querySelector('.searchField');
-const ldLogo = document.querySelector('.ld-logo')
+const ldLogo = document.querySelector('.ld-logo');
+const maincontent = document.querySelector('.main-content')
 
-let filteredCountries
+let filteredCountries;
 
 fetchCountries()
 async function fetchCountries() {
@@ -51,25 +52,65 @@ function renderCountry(data) {
 
 
 searchCountry.addEventListener('input', (e) => {
-    // console.log(e.target.value);
-    // console.log(filteredCountries)
     const searchedCountry = filteredCountries.filter((country) => country.name.common.toLowerCase().includes(e.target.value.toLowerCase()));
     renderCountry(searchedCountry)
 })
 
+let isDark = 0;
+
+isDark = parseInt(localStorage.getItem('isDark'))
+
+if (isDark === 1) {
+    document.body.classList.add('dark');
+    ldLogo.innerHTML = `<p class="ld-logo">
+    <i class="fa-solid fa-sun"></i>
+    &nbsp;Light Mode </p >`
+} else {
+    document.body.classList.remove('dark');
+    ldLogo.innerHTML = `<p class="ld-logo">
+    <i class="fa-regular fa-moon"></i>
+    &nbsp;Dark Mode
+</p>`
+}
+
 ldLogo.addEventListener('click', () => {
     document.body.classList.toggle('dark');
     if (document.body.classList.contains('dark')) {
+        isDark = 1;
+        localStorage.setItem('isDark', isDark)
+    } else {
+        isDark = 0;
+        localStorage.setItem('isDark', isDark)
+    }
+
+    if (isDark === 1) {
         ldLogo.innerHTML = `<p class="ld-logo">
         <i class="fa-solid fa-sun"></i>
         &nbsp;Light Mode </p >`
     } else {
         ldLogo.innerHTML = `<p class="ld-logo">
-            <i class="fa-regular fa-moon"></i>
-            &nbsp;Dark Mode
-        </p>`
+        <i class="fa-regular fa-moon"></i>
+        &nbsp;Dark Mode
+    </p>`
     }
+
 })
+
+
+// on scrolling;
+const upScroll = document.querySelector('.up-arrow');
+
+window.addEventListener('scroll', () => {
+    upScroll.classList.add('scroll')
+    if (window.scrollY >= 500) {
+        upScroll.classList.add('scroll')
+    } else {
+
+        upScroll.classList.remove('scroll')
+    }
+
+});
+
 
 
 // skeleton loading
