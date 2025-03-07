@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/?size=48&id=osWiBOYLPXb2&format=png">
+    <link rel="stylesheet" href="app.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+        rel="stylesheet" />
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <div class="main-container">
+            <section class="hero">
+                <div class="image-container">
+                    <img class="hero-image" src="images/main-imagesvg.svg" alt="quiz-image">
+                </div>
+                <button class="start-btn">Start Now >>></button>
+            </section>
+            <section class="quiz-section start-clicked">
+                <div class="logo-volume">
+                    <img class="logo-image" src="images/main-imagesvg.svg" alt="quiz-image">
+                    <div class="sound-logo sound-switch">
+                        <img class="volume" src="images/Volume .svg" alt="">
+                        <span class="sound-off">\</span>
+                    </div>
+
+                </div>
+
+                <div class="score-keeper">
+                    <span>
+                        <span class="current"></span>
+                        <span>/</span>
+                        <span class="total"></span>
+                    </span>
+                </div>
+                <div class="quiz-container">
+                    <p class="question"></p>
+                    <p class="countdown"><span></span></p>
+                    <div class="answer-container">
+                        <audio class="rightanswer" src="sfx/rightanswer.mp3"></audio>
+                        <audio class="wronganswer" src="sfx/wrong-answer.mp3"></audio>
+                        <div class="first">
+                            <p></p>
+                        </div>
+                        <div class="second">
+                            <p></p>
+                        </div>
+                        <div class="third">
+                            <p></p>
+                        </div>
+                        <div class="forth">
+                            <p></p>
+                        </div>
+
+                    </div>
+                </div>
+                <p class="next-button">
+                    <span class="next"></span>
+                    <span>></span>
+                </p>
+            </section>
+            <section class="result-container start-clicked">
+                <h2>Result</h2>
+                <div class="score-bar">
+                    <span class="correct"></span>
+                    <span class="wrong"></span>
+                </div>
+                <p class="result-score"></p>
+                <p class="quote"></p>
+                <button class="retry">>>>Retry</button>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>
