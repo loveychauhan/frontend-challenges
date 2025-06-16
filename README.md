@@ -8,9 +8,9 @@ Each folder in the repository is a self-contained frontend project. No framework
 
 frontend-challenges/
 │
-├── calc/ # Calculator with dark/light themes
-├── quiz-app/ # Interactive quiz interface
-├── rest-countries/ # REST Countries API explorer
+├── calc/ # Calculator with dark/light themes  [Live Link] https://simpli-coding-calculator.netlify.app/.
+├── quiz-app/ # Interactive quiz interface     [Live Link] https://simpli-coding-quiz-app.netlify.app/.
+├── rest-countries/ # REST Countries API explorer   [Live Link] https://simplicoding-rest-countries.netlify.app/. (!!currently down.)
 ├── ...more coming soon
 
 💡 What's Inside?
