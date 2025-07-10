@@ -1,22 +1,10 @@
-# Frontend Challenges 🚀
+# 🚀 Frontend Challenges
 
-A collection of frontend mini-projects to practice and improve your web development skills using HTML, CSS, and JavaScript. These challenges are perfect for beginners and intermediate developers looking to strengthen their portfolio or prepare for frontend interviews.
+A curated collection of **frontend mini-projects** built with pure HTML, CSS, and JavaScript. These bite-sized challenges are perfect for beginners and intermediate developers looking to sharpen their skills, build a portfolio, or prep for frontend interviews.
 
 ## 📁 Project Structure
 
-Each folder in the repository is a self-contained frontend project. No frameworks, just pure frontend code.
-
-frontend-challenges/
-│
-├── calc/ # Calculator with dark/light themes  [Live Link] https://simpli-coding-calculator.netlify.app/.
-├── quiz-app/ # Interactive quiz interface     [Live Link] https://simpli-coding-quiz-app.netlify.app/.
-├── rest-countries/ # REST Countries API explorer   [Live Link] https://simplicoding-rest-countries.netlify.app/. (!!currently down.)
-├── ...more coming soon
-
-💡 What's Inside?
-✅ HTML/CSS layout practice
-
-✅ DOM manipulation using JavaScript
+Each folder is a self-contained project—no frameworks, just clean and focused frontend code.
 
 ✅ API integration (REST Countries)
 
@@ -25,3 +13,33 @@ frontend-challenges/
 ✅ No use of eval() — pure logic implementation
 
 ✅ Responsive design principles
+
+
+### 🔗 Live Demos
+
+- 🧮 [Calculator](https://simpli-coding-calculator.netlify.app/)
+- ❓ [Quiz App](https://simpli-coding-quiz-app.netlify.app/)
+- 🌍 [REST Countries Explorer](https://simplicoding-rest-countries.netlify.app/) *(currently down)*
+
+## 💡 What's Inside?
+
+- ✅ Clean HTML/CSS layout practice  
+- ✅ DOM manipulation using JavaScript  
+- ✅ API integration and dynamic rendering  
+- ✅ Responsive design and UI polish  
+- ✅ Real-world use cases for interview prep
+
+## 🛠️ Tech Stack
+
+- **HTML5**  
+- **CSS3**  
+- **JavaScript (ES6+)**
+
+## 🧰 Getting Started
+
+Clone the repo and explore any project locally:
+
+# bash
+git clone https://github.com/loveychauhan/frontend-challenges.git
+cd frontend-challenges
+
