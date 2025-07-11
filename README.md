@@ -19,7 +19,7 @@ Each folder is a self-contained project—no frameworks, just clean and focused 
 
 - 🧮 [Calculator](https://simpli-coding-calculator.netlify.app/)
 - ❓ [Quiz App](https://simpli-coding-quiz-app.netlify.app/)
-- 🌍 [REST Countries Explorer](https://simplicoding-rest-countries.netlify.app/) 
+- 🌍 [REST Countries Explorer]([https://simplicoding-rest-countries.netlify.app/](https://simplicoding-rest-countries.netlify.app/)) 
 
 ## 💡 What's Inside?
 
